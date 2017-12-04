@@ -1,0 +1,5 @@
+{
+	"rust.checkArgs": [
+		"--features", "target_x11"
+	]
+}

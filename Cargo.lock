@@ -1,0 +1,172 @@
+[[package]]
+name = "appinstance"
+version = "0.1.0"
+source = "git+https://github.com/Pctg-x8/appinstance.git#68ca9c3ac18dbb1b89979a7a0ee2e7c15fddc10b"
+
+[[package]]
+name = "ferrite"
+version = "1.0.59"
+source = "git+https://github.com/Pctg-x8/ferrite#c0461ab2f60ec4d246acd91bc2b538fc416bede6"
+dependencies = [
+ "libc 0.2.34 (registry+https://github.com/rust-lang/crates.io-index)",
+ "xcb 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "kernel32-sys"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "winapi 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi-build 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.34"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "metrics"
+version = "0.1.0"
+source = "git+https://github.com/Pctg-x8/metrics#ef50f448ed863150b066f1cd927fa8b0fc1cbda0"
+dependencies = [
+ "metrics-derives 0.1.0 (git+https://github.com/Pctg-x8/metrics)",
+ "winapi 0.3.0-alpha.0 (git+https://github.com/retep998/winapi-rs?branch=dev)",
+]
+
+[[package]]
+name = "metrics-derives"
+version = "0.1.0"
+source = "git+https://github.com/Pctg-x8/metrics#ef50f448ed863150b066f1cd927fa8b0fc1cbda0"
+dependencies = [
+ "quote 0.3.15 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 0.11.11 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "quote"
+version = "0.3.15"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "screenshader"
+version = "0.1.0"
+dependencies = [
+ "appinstance 0.1.0 (git+https://github.com/Pctg-x8/appinstance.git)",
+ "ferrite 1.0.59 (git+https://github.com/Pctg-x8/ferrite)",
+ "libc 0.2.34 (registry+https://github.com/rust-lang/crates.io-index)",
+ "metrics 0.1.0 (git+https://github.com/Pctg-x8/metrics)",
+ "ws_common 0.1.0 (git+https://github.com/Pctg-x8/ws_common_rs)",
+]
+
+[[package]]
+name = "syn"
+version = "0.11.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "quote 0.3.15 (registry+https://github.com/rust-lang/crates.io-index)",
+ "synom 0.11.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "unicode-xid 0.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "synom"
+version = "0.11.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "unicode-xid 0.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "unicode-xid"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "user32-sys"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "winapi 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi-build 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "winapi"
+version = "0.2.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "winapi"
+version = "0.3.0-alpha.0"
+source = "git+https://github.com/retep998/winapi-rs?branch=dev#d51e53222b91c3de53f491ade94e1ac31903fb4d"
+dependencies = [
+ "winapi-i686-pc-windows-gnu 0.3.1 (git+https://github.com/retep998/winapi-rs?branch=dev)",
+ "winapi-x86_64-pc-windows-gnu 0.3.1 (git+https://github.com/retep998/winapi-rs?branch=dev)",
+]
+
+[[package]]
+name = "winapi-build"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "winapi-i686-pc-windows-gnu"
+version = "0.3.1"
+source = "git+https://github.com/retep998/winapi-rs?branch=dev#d51e53222b91c3de53f491ade94e1ac31903fb4d"
+
+[[package]]
+name = "winapi-x86_64-pc-windows-gnu"
+version = "0.3.1"
+source = "git+https://github.com/retep998/winapi-rs?branch=dev#d51e53222b91c3de53f491ade94e1ac31903fb4d"
+
+[[package]]
+name = "ws_common"
+version = "0.1.0"
+source = "git+https://github.com/Pctg-x8/ws_common_rs#99b50c22d492c49461e6474af04669a1334396fe"
+dependencies = [
+ "appinstance 0.1.0 (git+https://github.com/Pctg-x8/appinstance.git)",
+ "ferrite 1.0.59 (git+https://github.com/Pctg-x8/ferrite)",
+ "kernel32-sys 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.34 (registry+https://github.com/rust-lang/crates.io-index)",
+ "metrics 0.1.0 (git+https://github.com/Pctg-x8/metrics)",
+ "user32-sys 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "xcb 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "xcb"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.34 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum appinstance 0.1.0 (git+https://github.com/Pctg-x8/appinstance.git)" = "<none>"
+"checksum ferrite 1.0.59 (git+https://github.com/Pctg-x8/ferrite)" = "<none>"
+"checksum kernel32-sys 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "7507624b29483431c0ba2d82aece8ca6cdba9382bff4ddd0f7490560c056098d"
+"checksum libc 0.2.34 (registry+https://github.com/rust-lang/crates.io-index)" = "36fbc8a8929c632868295d0178dd8f63fc423fd7537ad0738372bd010b3ac9b0"
+"checksum log 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)" = "880f77541efa6e5cc74e76910c9884d9859683118839d6a1dc3b11e63512565b"
+"checksum metrics 0.1.0 (git+https://github.com/Pctg-x8/metrics)" = "<none>"
+"checksum metrics-derives 0.1.0 (git+https://github.com/Pctg-x8/metrics)" = "<none>"
+"checksum quote 0.3.15 (registry+https://github.com/rust-lang/crates.io-index)" = "7a6e920b65c65f10b2ae65c831a81a073a89edd28c7cce89475bff467ab4167a"
+"checksum syn 0.11.11 (registry+https://github.com/rust-lang/crates.io-index)" = "d3b891b9015c88c576343b9b3e41c2c11a51c219ef067b264bd9c8aa9b441dad"
+"checksum synom 0.11.3 (registry+https://github.com/rust-lang/crates.io-index)" = "a393066ed9010ebaed60b9eafa373d4b1baac186dd7e008555b0f702b51945b6"
+"checksum unicode-xid 0.0.4 (registry+https://github.com/rust-lang/crates.io-index)" = "8c1f860d7d29cf02cb2f3f359fd35991af3d30bac52c57d265a3c461074cb4dc"
+"checksum user32-sys 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "4ef4711d107b21b410a3a974b1204d9accc8b10dad75d8324b5d755de1617d47"
+"checksum winapi 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)" = "167dc9d6949a9b857f3451275e911c3f44255842c1f7a76f33c55103a909087a"
+"checksum winapi 0.3.0-alpha.0 (git+https://github.com/retep998/winapi-rs?branch=dev)" = "<none>"
+"checksum winapi-build 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "2d315eee3b34aca4797b2da6b13ed88266e6d612562a0c46390af8299fc699bc"
+"checksum winapi-i686-pc-windows-gnu 0.3.1 (git+https://github.com/retep998/winapi-rs?branch=dev)" = "<none>"
+"checksum winapi-x86_64-pc-windows-gnu 0.3.1 (git+https://github.com/retep998/winapi-rs?branch=dev)" = "<none>"
+"checksum ws_common 0.1.0 (git+https://github.com/Pctg-x8/ws_common_rs)" = "<none>"
+"checksum xcb 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "400cebeaedeca931825f11606874080f18aa51370dd3d7e11bc08d5aac8b3142"

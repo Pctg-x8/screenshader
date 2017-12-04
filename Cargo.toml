@@ -1,0 +1,15 @@
+[package]
+name = "screenshader"
+version = "0.1.0"
+authors = ["S.Percentage <Syn.Tri.Naga@gmail.com>"]
+
+[features]
+default = ["ws_common/with_ferrite", "ferrite/FeImplements", "ferrite/FePresentation", "ferrite/VK_EXT_debug_report"]
+target_x11 = ["ws_common/target_x11", "ferrite/VK_KHR_xcb_surface"]
+
+[dependencies]
+libc = "^0.2"
+appinstance = { git = "https://github.com/Pctg-x8/appinstance" }
+ws_common = { git = "https://github.com/Pctg-x8/ws_common_rs" }
+ferrite = { git = "https://github.com/Pctg-x8/ferrite" }
+metrics = { git = "https://github.com/Pctg-x8/metrics" }
